@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WatchListTT</title>
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet" href="style/HomePageDesign.css" />
+    <link rel="stylesheet" href="style/FontLibrary.css" />
+  </head>
+  <body>
+    
+    <nav>
+      <ul>
+        <li><a href="movies/LatestMovies.html">Movies</a></li>
+        <li><a id="aboutLink">About</a></li>
+      </ul>
+    </nav>
+
+  
+    <section class="title">
+      <h1>
+        WatchListTT
+      </h1>
+      <p>
+        Have no idea what to watch? Browse movies to view right away or save
+        them to a list for later!
+      </p>
+    </section>
+
+  
+    <section class="popularMovies popular">
+      <h2 class="popularTitle"> POPULAR MOVIES  </h2>
+      <a href="movies/PopularMovies.html">see more...</a>
+      
+      <div id="movies" class="scroll"></div>
+    </section>
+
+
+    <section class="seeMore">
+      <h2>For more options, click on one of the buttons below:</h2>
+      <div class="seeMore_buttons">
+       
+        <a href="movies/TopRated.html">MOVIES</a>
+    </section>
+
+ 
+    <section class="nowPlaying">
+      <h1>NOW PLAYING</h1>
+      <p id="nowPlayingText">
+        Movies that are now showing in cinemas. More recent films may be found
+        <a href="movies/LatestMovies.html">here</a>.
+      </p>
+    
+      <div id="nowPlaying" class="scroll"></div>
+    </section>
+
+    
+    <section class="about" id="aboutSection">
+      <h1>ABOUT</h1>
+      <p>
+        This website uses
+        <a href="https://themoviedb.org">themoviedb.org</a> API to help you find
+        movies to watch, with ease. You can:
+      </p>
+      <div class="about_boxes">
+      
+        <div class="moviesBox box">
+          <h3>Movies</h3>
+          <p>
+            Browse our listings of top-rated, popular, new, and upcoming movies
+            to find something to watch. You may narrow your search by year,
+            title, actor, or genre.
+          </p>
+        </div>
+     
+        <div class="listsBox box">
+          <h3>Lists</h3>
+          <p>
+            Create a watchlist and a favorites list to keep track of what you
+            need to watch and what you enjoyed!
+          </p>
+        </div>
+     
+        <div class="detailsBox box">
+          <h3>DETAILS</h3>
+          <p>
+            Receive full information on each film, including trailers and
+            suggestions for similar films.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="links">
+        <div class="moviesLinks">
+          <h3>MOVIES</h3>
+          <ul>
+            <li><a href="movies/top-rated.html">Top Rated</a></li>
+            <li><a href="movies/PopularMovies.html">Popular</a></li>
+            <li><a href="movies/LatestMovies.html">Latest</a></li>
+            <li><a href="movies/SearchMovies.html">Search</a></li>
+          </ul>
+        </div>
+        
+    </footer>
+  </body>
+  <script src="scripts/config.js"></script>
+  <script src="scripts/homePage.js"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>

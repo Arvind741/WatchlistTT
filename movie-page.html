@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Info | WatchlistTT</title>
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" type="text/css" href="style/filebody.css" />
+    <link rel="stylesheet" type="text/css" href="style/Pagedetails(info).css" />
+    <link rel="stylesheet" href="style/FontLibrary.css" />
+  </head>
+  <body>
+    <nav class="shadowMenu">
+      <div class="logo">
+        <a href="index.html"><h3>WatchlistTT</h3></a>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li class="list"><a href="movies/LatestMovies.html">Movies</a></li>
+          <li class="list"><a href="watchlist.html">Watchlist</a></li>
+          <li class="list"><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="spinner"></div>
+
+    <div class="container">
+      <div class="notification" id="added">Added to Watchlist !</div>
+      <div class="notification" id="alreadyStored">Already in watchlist !</div>
+      <div id="movie"></div>
+      <h2 id="trailer_title">Trailer</h2>
+      <div id="trailer"></div>
+      <div id="rec_title">
+        <h1>Recommendations</h1>
+        <p>Here are some similar movies to this one:</p>
+      </div>
+      <div id="recommended"></div>
+      <div class="page">
+        <button id="prev" title="Previous page">PREVIOUS</button>
+        <button id="next" title="Next page">NEXT</button>
+      </div>
+      <div id="overlay" class="overlay"></div>
+    </div>
+
+    <button id="scrollToTop">
+      <i class="material-icons upArrow">expand_less</i>
+    </button>
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/movies/movie-page.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      getMovie();
+    </script>
+  </body>
+</html>

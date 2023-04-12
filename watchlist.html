@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watchlist | WatchlistTT</title>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet" href="style/filebody.css">
+    <link rel="stylesheet" href="style/lists.css">
+    <link rel="stylesheet" href="style/FontLibrary.css">
+</head>
+<body>
+
+	<nav>
+        <div class="logo">
+		    <a href="index.html"><h3>WatchListTT</h3></a>
+        </div>
+    
+        <div class="menu">
+            <ul>
+             <li class="list"><a href="movies/LatestMovies.html">Movies</a></li>
+             <li class="list"><a href="watchlist.html">Watchlist</a></li>
+             <li class="list"><a href="favorites.html">Favorites</a></li>
+         </ul>
+        </div>
+           </nav>
+
+	<div class="container">
+        <h1 id="page_title">WATCHLIST</h1>
+    </div>
+    
+
+<button id="scrollToTop"><i class="material-icons upArrow">expand_less</i></button>
+
+>
+	<div class="showcase">
+        
+        <h2>MOVIES</h2>
+        <button class="remove" id="removeAllMovies">Clear List</button>
+        <div id="movies" class="moviesRows"></div>
+        
+ 
+    <div class="pages">
+        <button id="prev" title="Previous page">PREVIOUS</button>
+		<button id="next" title="Next page">NEXT</button>
+    </div>
+   
+    <div class="recommendedBox">
+        <h2 id="recommendedTitle"></h2>
+        <div id="recommendedOutput" class="recommendedOutput"></div>
+        <button id="closeRecommended">Close</button>
+    </div>
+    
+		<div class="notification" id="added"></div>
+		<div class="notification" id="alreadyStored"></div>
+
+<script src="scripts/config.js"></script>
+<script src="scripts/global.js"></script>
+<script src="scripts/watchlist.js"></script>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

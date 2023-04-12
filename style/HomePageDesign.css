@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+}
+div:focus,
+button:focus,
+span:focus {
+  outline: none !important;
+}
+li {
+  list-style-type: none;
+}
+.hot {
+  color: #e1302a;
+  font-size: 30px;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+  background-color: #03045e;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+nav ul li {
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: "Montserrat SemiBold";
+  color: #f5f5f5;
+  font-size: 16px;
+  position: relative;
+}
+nav ul li a:hover {
+  color: #e1302a;
+}
+
+.title {
+  margin-left: 10px;
+}
+.title h1 {
+  font-size: 80px;
+  font-family: "Paytone One";
+  color: #2f3640;
+}
+.title p {
+  font-size: 18px;
+  color: #444;
+  font-family: "Paytone One";
+}
+
+.popular {
+  position: relative;
+  margin: 50px 0;
+}
+.popularTitle {
+  font-family: "Paytone One";
+  color: #444;
+  font-size: 25px;
+  margin-left: 10px;
+  position: absolute;
+  left: 5%;
+  top: -40px;
+  display: flex;
+  align-items: center;
+}
+.popularTitle span {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.popular a {
+  position: absolute;
+  top: -25px;
+  right: 6%;
+  text-decoration: none;
+  color: #444;
+  font-family: "Paytone One";
+  transition: 0.2s ease;
+}
+.popular a:hover {
+  color: #2f3640;
+}
+
+.seeMore {
+  text-align: center;
+}
+.seeMore h2 {
+  font-size: 16px;
+  font-family: "Montserrat Thin";
+  color: #2f3640;
+}
+.seeMore_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.seeMore_buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Paytone One";
+  color: #555;
+  font-size: 17px;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  width: 110px;
+  height: 35px;
+  transition: 0.2s ease;
+}
+.seeMore_buttons a:hover {
+  color: #e1302a;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nowPlaying h1 {
+  font-family: "Paytone One";
+  text-align: center;
+  font-size: 65px;
+  color: #444;
+}
+#nowPlayingText {
+  text-align: center;
+}
+.nowPlaying p {
+  font-family: "Montserrat Medium";
+  font-size: 16px;
+  color: #444;
+}
+.nowPlaying a {
+  color: #e1302a;
+  text-decoration: none;
+  font-family: "Montserrat SemiBold";
+}
+
+.scroll {
+  margin: 15px auto;
+  overflow: hidden;
+  width: 88.5%;
+  display: flex;
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transition: 0.5s ease;
+}
+.scroll .card:first-child {
+  margin-left: 0px;
+}
+.scroll .card {
+  margin: 0px 3px;
+  position: relative;
+  height: 450px;
+  transition: 0.5s ease;
+}
+.scroll .card img {
+  height: 450px;
+}
+.scroll .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: 0.3s ease-in-out;
+  padding: 10px;
+  transform: translateY(-500px);
+}
+.scroll .overlay .movie {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.scroll .card .overlay .movie a {
+  display: flex;
+  position: static;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  width: 70px;
+  height: 30px;
+  border: none;
+  background-color: #288772;
+  color: #333;
+  font-family: "Montserrat SemiBold";
+  margin: 10px 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  outline: none !important;
+}
+.scroll .card .overlay .movie a:hover {
+  background-color: #2f3640;
+  color: #288772;
+}
+.scroll .movie p {
+  font-family: "Montserrat Medium";
+  color: #fff;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.movie p span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.movie p i {
+  margin-left: 5px;
+  margin-bottom: 2px;
+  font-size: 22px;
+}
+.star {
+  color: gold;
+}
+.date {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.35);
+  color: #f2f2f2;
+}
+.scroll .overlay h2 {
+  font-family: "Montserrat Black";
+  width: auto;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.scroll .card:hover .overlay {
+  transform: translateY(0px);
+}
+
+.about {
+  text-align: center;
+}
+.about h1 {
+  font-family: "Paytone One";
+  font-size: 65px;
+  color: #444;
+}
+.about p {
+  font-family: "Montserrat Medium";
+  color: #444;
+  font-size: 16px;
+}
+.about a {
+  text-decoration: none;
+  color: #e1302a;
+  font-family: "Montserrat SemiBold";
+}
+.about_boxes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+.box {
+  width: 240px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.4s ease;
+  cursor: default;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+}
+.box h3 {
+  font-family: "Paytone One";
+  font-size: 20px;
+  color: #2f3640;
+}
+.box p {
+  font-family: "Montserrat Regular";
+  font-size: 18px;
+  color: #444;
+}
+
+@keyframes wS {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    animation: test 1s ease forwards infinite;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes test {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+footer {
+  border-top: 3px solid #2f364020;
+  background-color: #03045e;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "links deadpool credits";
+  position: relative;
+}
+footer .links {
+  grid-area: links;
+  display: flex;
+  margin-left: 10px;
+}
+footer .links > * {
+  margin: 0 10px;
+}
+footer .links h3 {
+  font-family: "Paytone One";
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #f5f5f5;
+}
+footer .links a {
+  text-decoration: none;
+  padding: 5px 0px;
+  font-family: "Montserrat Regular";
+  font-size: 16px;
+  color: #f5f5f5;
+}
+footer .links a:hover {
+  color: #e1302a;
+}

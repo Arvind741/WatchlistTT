@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular movies | WatchListTT</title>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="../logo.png"/>
+    <link rel="stylesheet" type="text/css" href="../style/filebody.css">
+    <link rel="stylesheet" href="../style/FontLibrary.css">
+</head>
+<body>
+    
+	<nav>
+            <div class="logo"
+                    a href="../index.html"><h3>WatchListTT</h3></a>
+            </div>
+
+           <div class="menu">
+            <ul>
+             <li class="list"><a href="latest-movies.html">Movies</a></li>
+             <li class="list"><a href="../watchlist.html">Watchlist</a></li>
+             <li class="list"><a href="../favorites.html">Favorites</a></li>
+            </ul>
+        </div>
+               </nav>
+               
+               <div class="submenu">
+                <li><a href="SearchMovies.html">search movies</a></li>
+                <li><a href="TopRated.html">Top rated</a></li>
+                <li><a href="LatestMovies.html">Latest movies</a></li>
+               </div>
+
+	<div class="spinner"></div>
+	<div class="container">
+		<h1>Popular movies</h1>
+    </div>
+    <div class="notification" id="added"></div>
+    <div class="notification" id="alreadyStored"></div>
+	<div class="showcase">
+		<div id="movies" class="moviesRows"></div>
+    </div>
+   
+    <div class="pages">
+        <button id="prev" title="Previous page">PREVIOUS</button>
+		<button id="next" title="Next page">NEXT</button>
+    </div>
+
+<script src="../scripts/config.js"></script>
+<script src="../scripts/movies/popular-movies.js"></script>
+<script src="../scripts/global.js"></script>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
